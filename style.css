@@ -803,6 +803,9 @@ nav > a{
         margin-top: 47px;
         padding: 40px;
     }
+    .hero-section{
+        padding-top:30px;
+    }
     
     .section-1-right{
         text-align:start;
@@ -858,7 +861,7 @@ nav > a{
         font-weight: 400;
     }
     .section-2{
-        margin-top: 1cqi;
+        margin-top: 10px;
     }
     .section-2 h1{
         width:fit-content;
