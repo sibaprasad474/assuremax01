@@ -47,7 +47,6 @@ nav > a{
 #menu{
     color: #fff;
     font-size: 25px;
-    padding-right: 10px;
     display: none;
 }
 .nav-links{
@@ -794,7 +793,7 @@ nav > a{
 }
 @media screen and (max-width:576px){
     nav{
-        padding: 20px;
+        padding: 20px 5px 20px 20px;
     }
     nav >a{
         font-size: 23px;
@@ -806,7 +805,6 @@ nav > a{
     .hero-section{
         padding-top:30px;
     }
-    
     .section-1-right{
         text-align:start;
         position: relative;
@@ -897,6 +895,10 @@ nav > a{
     .section-3-box p{
         font-size: 12px;
     }
+    .section-4-left img{
+        max-width: 300px;
+        height: 300px;
+    }
     .section-4-right h1{
         width: 300px;
         font-size: 30px;
@@ -910,8 +912,8 @@ nav > a{
         grid-template-columns: 1fr;
     }
     .section-6{
-        gap: 20px;
-        padding: 50px 20px 20px;
+        gap: 10px;
+        padding: 50px 10px 10px;
     }
     .section-6-left >p{
         margin: 30px 0px;
@@ -921,7 +923,7 @@ nav > a{
     }
     .contact-left-container{
         width: 100%;
-        padding:30px 20px;
+        padding:30px 10px;
         gap: 40px;
     }
     .contact-left-container .contact-left-box i{
@@ -961,20 +963,18 @@ nav > a{
     }
     .contact-btn button{
         padding: 5px 20px;
-    }
-    
-
-    
-
+    }   
 }
-    
-
-
-
-
 
 /* --small devices-- */
 
 @media screen and (max-width:350px){
-    
+    .section-6{
+        gap: 10px;
+        padding: 50px 5px 5px;
+    }
+    .section-4-left img{
+        max-width: 250px;
+        height: 250px;
+    }
 }
