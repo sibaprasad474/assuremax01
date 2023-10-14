@@ -24,16 +24,20 @@ html{
     min-height: 100vh;
     background: linear-gradient(130.41deg, #1F8058 -48.15%, #0D4A31 64.12%);
 }
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px 20px;
+.navigation{
+    width: 100vw;
     position:fixed;
-    background-color: #0D4A31;
     top: 0;
     left: 0;
     z-index: 100;
+    background-color: #0D4A31;
+}
+nav{
+    max-width:90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px;
 }
 nav > a{
     font-size: 30px;
@@ -77,7 +81,7 @@ nav > a{
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin: auto;
-    padding-top:80px;
+    padding-top:100px;
 }
 .section-1-left{
     padding-top:100px;
