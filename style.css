@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
+    transition: 0.3s ease-in all;
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -22,7 +23,9 @@ html{
 .section-1{
     width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(130.41deg, #1F8058 -48.15%, #0D4A31 64.12%);
+    /* background: linear-gradient(130.41deg, #1F8058 -48.15%, #0D4A31 64.12%); */
+    /* background: linear-gradient(130.41deg, #bdbdbd -48.15%, #126132 64.12%); */
+    background: linear-gradient(130.41deg, #bd1d1d -48.15%, #0D4A31 64.12%);
 }
 .navigation{
     width: 100vw;
@@ -30,7 +33,10 @@ html{
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: #0D4A31;
+    /* background-color: #0D4A31; */
+    /* background-color: #073323; */
+    background-color: #ffffff;
+    /* color: #000; */
 }
 nav{
     max-width:90%;
@@ -41,11 +47,13 @@ nav{
 }
 nav > a{
     font-size: 30px;
-    color:#fff;
+    /* color:#fff; */
+    color: #000;
     font-weight: 500;
 }
 #menu{
-    color: #fff;
+    /* color: #fff; */
+    color: #000;
     font-size: 25px;
     display: none;
 }
@@ -56,7 +64,7 @@ nav > a{
 }
 .nav-links a {
     font-size:18px;
-    color: #fff;
+    color: #000;
 }
 .nav-links a:hover{
     color: grey;
@@ -74,6 +82,46 @@ nav > a{
     background-color: #fff;
     
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 12px 16px;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5%;
+}
+
+.dropdown-menu a:hover {
+    background-color: #19926240;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* ============ navbar ends ========= */
+
 .hero-section{
     width: 90%;
     display: grid;
@@ -184,8 +232,8 @@ nav > a{
 }
 
 .section-1-right .icons img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     object-fit: cover;
     object-position: center;
 }
@@ -267,10 +315,10 @@ nav > a{
     border-radius: 5px;
 }
 .section-2-box:nth-child(2){
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
 }
 .section-2-box img{
-    width: 100%;
+    width: 75%;
     border-radius: 10px 10px 0px 0px;
 }
 .section-2-box .section-2-para{
@@ -316,10 +364,14 @@ nav > a{
     margin: auto;
     margin-top: 100px;
     padding: 50px 20px;
-    background-color:#fff;
+    background-color: #0D4A31;
+    color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+}
+.section-3-left{
+    padding: 5vw;
 }
 .section3-left-title{
     margin-bottom: 30px;
@@ -635,7 +687,9 @@ nav > a{
     border: 1px solid #ddd;
     padding: 15px 10px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: bold;
+    outline: none;
+    background-color: #055031;
 }
 .inputbox input::placeholder{
     color: grey;
@@ -646,8 +700,12 @@ nav > a{
     border: 1px solid #ddd;
     padding: 5px 10px;
     font-size: 14px;
-    font-weight: 300;
     resize: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #055031;
 }
 .contact-btn{
     text-align: end;
@@ -763,6 +821,11 @@ nav > a{
         font-size:18px;
         color: #fff;
     }
+    .dropdown-menu{
+        background-color: #0D4A31;
+    }
+
+    
     .nav-links button{
         background: #F7C85A;
         padding: 10px 25px;
@@ -969,6 +1032,7 @@ nav > a{
 /* --small devices-- */
 
 @media screen and (max-width:350px){
+    
     .section-6{
         gap: 10px;
         padding: 50px 5px 5px;
